@@ -1,13 +1,55 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>boutique-ts</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini-boutique</title>
+</head>
+
+<body>
+  <header class="entete">
+    <h1>Mini-boutique</h1>
+    <p>Panier : <span id="compteur">0</span> article(s) </p>
+
+  </header>
+
+  <main class="page">
+    <section>
+
+    </section>
+
+    <div class="filtres">
+
+      <input type="search" id="Recherche" placeholder="Rechercher un produit">
+      <select name="" id="filtre-gategorie">
+        <option value="toutes">Toutes</option>
+        <option value="vetements">Vétements</option>
+        <option value="chaussures">Chaussures</option>
+        <option value="accessoires">Accessoires</option>
+        <option value="maison">Maison</option>
+      </select>
+
+      <div id="catalogue" class="grille">
+
+      </div>
+      
+    </div>
+    <aside class="panier">
+      <h2>Mon panier </h2>
+      <ul id="lignes-panier">
+
+      </ul>
+      <p class="total">
+        Total : <strong id="total">0 F CFA</strong>
+      </p>
+
+    </aside>
+
+
+  </main>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
 </html>
